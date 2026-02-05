@@ -1,10 +1,15 @@
 Advanced Anomaly Detection Report
 
-One-Class SVM AUC: 0.9815
-Best Params: {'ocsvm__gamma': 0.01, 'ocsvm__nu': 0.05}
+One-Class SVM Results
+AUC Score: 0.9815
+Best Hyperparameters:
+gamma = 0.01, nu = 0.05
 
-Isolation Forest AUC: 0.9815
-Best Params: {'contamination': 0.008, 'max_samples': 'auto', 'n_estimators': 200}
+Isolation Forest Results
+AUC Score: 0.9815
+Best Hyperparameters:
+n_estimators = 200, max_samples = auto, contamination = 0.008
 
-Conclusion:
-Isolation Forest slightly outperforms OCSVM.
+Conclusion
+
+Both One-Class SVM and Isolation Forest achieved identical ROC-AUC scores, indicating comparable anomaly detection performance on the synthetic dataset. While Isolation Forest required less feature scaling and parameter sensitivity, One-Class SVM performed equally well when properly tuned. The choice between the two models may therefore depend on computational efficiency and ease of deployment rather than detection accuracy.
