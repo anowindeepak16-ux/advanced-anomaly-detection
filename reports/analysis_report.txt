@@ -1,0 +1,10 @@
+Advanced Anomaly Detection Report
+
+One-Class SVM AUC: 0.9815
+Best Params: {'ocsvm__gamma': 0.01, 'ocsvm__nu': 0.05}
+
+Isolation Forest AUC: 0.9815
+Best Params: {'contamination': 0.008, 'max_samples': 'auto', 'n_estimators': 200}
+
+Conclusion:
+Isolation Forest slightly outperforms OCSVM.
